@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplePickerAPH", "ApplePickerAPH.csproj", "{34118565-78F4-8429-1EB7-446EF3398834}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplePickerAPH", "Assembly-CSharp.csproj", "{457178BD-8C9A-39F6-9674-EB080882E6CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{34118565-78F4-8429-1EB7-446EF3398834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34118565-78F4-8429-1EB7-446EF3398834}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34118565-78F4-8429-1EB7-446EF3398834}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34118565-78F4-8429-1EB7-446EF3398834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457178BD-8C9A-39F6-9674-EB080882E6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457178BD-8C9A-39F6-9674-EB080882E6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457178BD-8C9A-39F6-9674-EB080882E6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457178BD-8C9A-39F6-9674-EB080882E6CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
