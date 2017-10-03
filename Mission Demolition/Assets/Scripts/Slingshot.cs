@@ -5,7 +5,9 @@ using UnityEngine;
 public class Slingshot : MonoBehaviour {
     // fields set in the Unity Inspector pane
     public GameObject prefabProjectile;
-    public bool _____________;  // field sets dynamically
+    public float velocityMult = 4f;
+    public bool _____________;  
+    // fields sets dynamically
     public GameObject launchPoint;
     public Vector3 launchPos;
     public GameObject projectile;
@@ -15,6 +17,7 @@ public class Slingshot : MonoBehaviour {
         Transform launchPointTrans = transform.Find("LaunchPoint");
         launchPoint = launchPointTrans.gameObject;
         launchPoint.SetActive(false);
+        launchPos = launchPointTrans.position;
 
     }
 
@@ -36,6 +39,7 @@ public class Slingshot : MonoBehaviour {
         // Start it at launchPoint
         projectile.transform.position = launchPos;
         // Set it to is kinematic for now
+        projectile.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     // Use this for initialization
@@ -45,6 +49,12 @@ public class Slingshot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        // If Slingshot is not in aimingMode, don't run this code
+        if (!aimingMode) return;
+        //Get the current mouse position in 2D screen coordinates
+        Vector3 mousePos2D = Input.mousePosition;
+        //Convert the mouse position to 3dD world coordinates
+        mousePos2D.z = -Camera.main.transform.position.z;
+        Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
 	}
 }
