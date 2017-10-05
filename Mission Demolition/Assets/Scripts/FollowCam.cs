@@ -29,11 +29,35 @@ public class FollowCam : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		if (poi == null)
-			return; //return if there is no poi
-		
-		// Get the position of the poi
-		Vector3 destination = poi.transform.position;
+		Vector3 destination;
+
+		// If there is no pi, return to P: [0, 0, 0]
+		if (poi == null) {
+			
+			destination = Vector3.zero;
+
+		} else {
+			
+			// Get the position of the poi
+			destination = poi.transform.position;
+
+			// If poi is a Projectile, then check to rest if it is at rest
+			if (poi.tag == "Projectile") {
+
+				//If it is sleeping (or not moving)
+				if (poi.GetComponent<Rigidbody> ().IsSleeping ()) {
+					// return to default view
+					poi = null;
+					// in the next update
+					return;
+				} else if (Time.time - Slingshot.proTime > 5) {
+					poi = null;
+					return;
+				}
+
+			}
+
+		}
 
 		//Limit the X & Y to minimum values
 		destination.x = Mathf.Max(minXY.x, destination.x);
