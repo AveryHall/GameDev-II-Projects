@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FollowCam.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Slingshot.cs" Line="84" Column="33" />
+      <File FileName="Assets\Scripts\FollowCam.cs" Line="33" Column="39" />
+      <File FileName="Assets\Scripts\CloudCrafter.cs" Line="89" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
