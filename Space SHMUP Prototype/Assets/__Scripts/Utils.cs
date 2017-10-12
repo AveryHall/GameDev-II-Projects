@@ -229,7 +229,7 @@ public class Utils : MonoBehaviour {
 
 	}
 
-	//================== Transform FUnctions ==================//
+	//================== Transform Functions ==================//
 
 	// This function will iterately climb up the transform.parent tree
 	//  until it either finds a parent with a tag != "Untagged" or no parent
@@ -255,6 +255,21 @@ public class Utils : MonoBehaviour {
 	//This version of the function handles things if a Transform is passed in
 	public static GameObject FindTaggedParent(Transform t) {
 		return(FindTaggedParent (t.gameObject));
+	}
+
+
+	//=========================== Materials Functions ============================\\
+
+	// Returns a list of all Materials on this GameObject or its children
+	static public Material[] GetAllMaterials( GameObject go ) {
+		List<Material> mats = new List<Material>();
+		if (go.GetComponent<Renderer>() != null) {
+			mats.Add(go.GetComponent<Renderer>().material);
+		}
+		foreach( Transform t in go.transform ) {
+			mats.AddRange( GetAllMaterials( t.gameObject ) );
+		}
+		return( mats.ToArray() );
 	}
 
 }
