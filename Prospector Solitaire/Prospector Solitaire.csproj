@@ -88,9 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\__Scripts\Card.cs" />
+    <Compile Include="Assets\__Scripts\CardProspector.cs" />
     <Compile Include="Assets\__Scripts\Deck.cs" />
     <Compile Include="Assets\__Scripts\Layout.cs" />
-    <Compile Include="Assets\__Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\__Scripts\Prospector.cs" />
     <Compile Include="Assets\__Scripts\PT_XMLReader.cs" />
     <Compile Include="Assets\__Scripts\Utils.cs" />
