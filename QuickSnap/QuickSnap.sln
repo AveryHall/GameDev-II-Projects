@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSnap.Plugins", "QuickSnap.Plugins.csproj", "{9DCE6426-A6F3-758E-5F57-DAB2421BB17E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSnap", "QuickSnap.csproj", "{39283E35-01BB-C444-BEAD-85CF49CC6A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSnap.Editor.Plugins", "QuickSnap.Editor.Plugins.csproj", "{D7897E22-F43F-C0EB-51DB-08CFFC3554F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DCE6426-A6F3-758E-5F57-DAB2421BB17E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCE6426-A6F3-758E-5F57-DAB2421BB17E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCE6426-A6F3-758E-5F57-DAB2421BB17E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCE6426-A6F3-758E-5F57-DAB2421BB17E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39283E35-01BB-C444-BEAD-85CF49CC6A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39283E35-01BB-C444-BEAD-85CF49CC6A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39283E35-01BB-C444-BEAD-85CF49CC6A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39283E35-01BB-C444-BEAD-85CF49CC6A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7897E22-F43F-C0EB-51DB-08CFFC3554F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7897E22-F43F-C0EB-51DB-08CFFC3554F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7897E22-F43F-C0EB-51DB-08CFFC3554F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7897E22-F43F-C0EB-51DB-08CFFC3554F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

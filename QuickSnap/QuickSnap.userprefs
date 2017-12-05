@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\__Scripts\TargetCamera.cs">
+    <Files>
+      <File FileName="Assets\__Scripts\TargetCamera.cs" Line="105" Column="35" />
+      <File FileName="Assets\__Scripts\Shot.cs" Line="147" Column="20" />
+      <File FileName="Assets\__Scripts\ProtoTools\Utils.cs" Line="350" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
